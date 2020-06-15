@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E00CD542497F30300C005AB /* LibraryAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E00CD532497F30300C005AB /* LibraryAPI.swift */; };
+		3E00CD562497F37900C005AB /* PersistencyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E00CD552497F37900C005AB /* PersistencyManager.swift */; };
 		79F6FC411F14251800E22ED5 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F6FC401F14251800E22ED5 /* Album.swift */; };
 		79F6FC431F14254E00E22ED5 /* AlbumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79F6FC421F14254E00E22ED5 /* AlbumView.swift */; };
 		EDDF66161EBD28EF006123DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDDF66151EBD28EF006123DA /* AppDelegate.swift */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3E00CD532497F30300C005AB /* LibraryAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryAPI.swift; sourceTree = "<group>"; };
+		3E00CD552497F37900C005AB /* PersistencyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistencyManager.swift; sourceTree = "<group>"; };
 		79F6FC401F14251800E22ED5 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
 		79F6FC421F14254E00E22ED5 /* AlbumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumView.swift; sourceTree = "<group>"; };
 		EDDF66121EBD28EF006123DA /* RWBlueLibrary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RWBlueLibrary.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,11 +45,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3E00CD502497F24F00C005AB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				79F6FC401F14251800E22ED5 /* Album.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		3E00CD512497F26100C005AB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				79F6FC421F14254E00E22ED5 /* AlbumView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		3E00CD522497F26900C005AB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EDDF66171EBD28EF006123DA /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		EDDF66091EBD28EF006123DA = {
 			isa = PBXGroup;
 			children = (
-				EDDF66141EBD28EF006123DA /* RWBlueLibrary */,
 				EDDF66131EBD28EF006123DA /* Products */,
+				EDDF66141EBD28EF006123DA /* RWBlueLibrary */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -62,13 +90,13 @@
 		EDDF66141EBD28EF006123DA /* RWBlueLibrary */ = {
 			isa = PBXGroup;
 			children = (
-				79F6FC401F14251800E22ED5 /* Album.swift */,
-				79F6FC421F14254E00E22ED5 /* AlbumView.swift */,
-				EDDF66211EBD28EF006123DA /* Info.plist */,
-				EDDF66151EBD28EF006123DA /* AppDelegate.swift */,
-				EDDF66171EBD28EF006123DA /* ViewController.swift */,
-				EDDF661C1EBD28EF006123DA /* Assets.xcassets */,
+				3E00CD522497F26900C005AB /* Controller */,
+				3E00CD512497F26100C005AB /* View */,
+				3E00CD502497F24F00C005AB /* Model */,
 				EDDF66351EBD2B5F006123DA /* API */,
+				EDDF66151EBD28EF006123DA /* AppDelegate.swift */,
+				EDDF661C1EBD28EF006123DA /* Assets.xcassets */,
+				EDDF66211EBD28EF006123DA /* Info.plist */,
 				EDDF661E1EBD28EF006123DA /* LaunchScreen.storyboard */,
 				EDDF66191EBD28EF006123DA /* Main.storyboard */,
 			);
@@ -79,6 +107,8 @@
 			isa = PBXGroup;
 			children = (
 				EDDF66361EBD2B8C006123DA /* HTTPClient.swift */,
+				3E00CD532497F30300C005AB /* LibraryAPI.swift */,
+				3E00CD552497F37900C005AB /* PersistencyManager.swift */,
 			);
 			name = API;
 			sourceTree = "<group>";
@@ -158,9 +188,11 @@
 			files = (
 				EDDF66181EBD28EF006123DA /* ViewController.swift in Sources */,
 				EDDF66371EBD2B8C006123DA /* HTTPClient.swift in Sources */,
+				3E00CD542497F30300C005AB /* LibraryAPI.swift in Sources */,
 				EDDF66161EBD28EF006123DA /* AppDelegate.swift in Sources */,
 				79F6FC431F14254E00E22ED5 /* AlbumView.swift in Sources */,
 				79F6FC411F14251800E22ED5 /* Album.swift in Sources */,
+				3E00CD562497F37900C005AB /* PersistencyManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
