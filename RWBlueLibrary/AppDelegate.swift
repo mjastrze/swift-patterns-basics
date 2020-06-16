@@ -63,5 +63,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
   }
 
+  func application(_ application: UIApplication, shouldSaveSecureApplicationState coder: NSCoder) -> Bool {
+    return true
+  }
+
+  func application(_ application: UIApplication, shouldRestoreSecureApplicationState coder: NSCoder) -> Bool {
+    return true
+  }
 }
 
